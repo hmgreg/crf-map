@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>CRF Map</title>
+  <title>CRF Map with Filters</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
   <style>
@@ -14,7 +14,7 @@
     }
 
     #sidebar {
-      width: 320px;
+      width: 340px;
       overflow-y: auto;
       background: #f8f9fa;
       border-right: 1px solid #ccc;
@@ -29,6 +29,8 @@
     .business {
       margin-bottom: 20px;
       cursor: pointer;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
     }
 
     .business h3 {
@@ -49,11 +51,43 @@
     .business a:hover {
       text-decoration: underline;
     }
+
+    .filter-buttons {
+      margin-bottom: 10px;
+    }
+
+    .filter-buttons button {
+      margin: 2px;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      background: white;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .filter-buttons button.active {
+      background-color: #0077cc;
+      color: white;
+      border-color: #005fa3;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
   </style>
 </head>
 <body>
 
-  <div id="sidebar"></div>
+  <div id="sidebar">
+    <input id="searchInput" placeholder="Search by name, country, email..." />
+    <div class="filter-buttons" id="filterButtons"></div>
+    <div id="businessList"></div>
+  </div>
   <div id="map"></div>
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
@@ -106,37 +140,85 @@
       zoom: 2
     });
 
-    const sidebar = document.getElementById('sidebar');
+    const sidebar = document.getElementById('businessList');
+    const searchInput = document.getElementById('searchInput');
+    const filterButtons = document.getElementById('filterButtons');
 
-    businesses.forEach(biz => {
-      // Add marker
-      const marker = new mapboxgl.Marker()
-        .setLngLat(biz.coords)
-        .setPopup(
-          new mapboxgl.Popup().setHTML(`
+    const uniqueCountries = [...new Set(businesses.map(b => b.country))];
+    let selectedCountry = 'All';
+    let searchTerm = '';
+
+    const markers = [];
+
+    // Add filter buttons
+    function renderFilterButtons() {
+      const countries = ['All', ...uniqueCountries];
+      filterButtons.innerHTML = '';
+      countries.forEach(country => {
+        const btn = document.createElement('button');
+        btn.textContent = country;
+        btn.className = selectedCountry === country ? 'active' : '';
+        btn.onclick = () => {
+          selectedCountry = country;
+          renderBusinesses();
+        };
+        filterButtons.appendChild(btn);
+      });
+    }
+
+    // Render business list and markers
+    function renderBusinesses() {
+      sidebar.innerHTML = '';
+      markers.forEach(m => m.remove());
+      markers.length = 0;
+
+      const filtered = businesses.filter(b => {
+        const matchCountry = selectedCountry === 'All' || b.country === selectedCountry;
+        const matchText = Object.values(b).some(val =>
+          typeof val === 'string' && val.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        return matchCountry && matchText;
+      });
+
+      filtered.forEach(biz => {
+        const div = document.createElement('div');
+        div.className = 'business';
+        div.innerHTML = `
+          <h3>${biz.name}</h3>
+          <p><strong>${biz.country}</strong></p>
+          <p>${biz.address}</p>
+          <p><a href="mailto:${biz.email}">${biz.email}</a></p>
+          <p>Phone: ${biz.phone}</p>
+          <p><a href="${biz.website}" target="_blank">Website</a></p>
+        `;
+        div.onclick = () => {
+          map.flyTo({ center: biz.coords, zoom: 10 });
+        };
+        sidebar.appendChild(div);
+
+        const marker = new mapboxgl.Marker()
+          .setLngLat(biz.coords)
+          .setPopup(new mapboxgl.Popup().setHTML(`
             <strong>${biz.name}</strong><br>
             ${biz.address}<br>
             <a href="mailto:${biz.email}">${biz.email}</a><br>
             <a href="${biz.website}" target="_blank">${biz.website}</a><br>
             Phone: ${biz.phone}
-          `)
-        )
-        .addTo(map);
+          `))
+          .addTo(map);
 
-      // Add to sidebar
-      const div = document.createElement('div');
-      div.className = 'business';
-      div.innerHTML = `
-        <h3>${biz.name}</h3>
-        <p><strong>${biz.country}</strong></p>
-        <p>${biz.address}</p>
-        <p><a href="mailto:${biz.email}">${biz.email}</a></p>
-        <p>Phone: ${biz.phone}</p>
-        <p><a href="${biz.website}" target="_blank">Website</a></p>
-      `;
-      div.onclick = () => map.flyTo({ center: biz.coords, zoom: 10 });
-      sidebar.appendChild(div);
+        markers.push(marker);
+      });
+    }
+
+    // Search listener
+    searchInput.addEventListener('input', () => {
+      searchTerm = searchInput.value;
+      renderBusinesses();
     });
+
+    renderFilterButtons();
+    renderBusinesses();
   </script>
 
 </body>
