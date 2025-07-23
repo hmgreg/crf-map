@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>CRF Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    body { margin: 0; }
+    #map { width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGFwcHltb25kYXkiLCJhIjoiY21kZXpjNGx2MDhmOTJrb3Bja2ViMW5qcyJ9.rrWtPNbSr1AXBiGQl8AY6A';
+
+    const locations = [
+      { name: "Auckland, NZ", coords: [174.7633, -36.8485] },
+      { name: "Sydney, AUS", coords: [151.2093, -33.8688] },
+      { name: "New York, US", coords: [-74.006, 40.7128] },
+      { name: "London, UK", coords: [-0.1278, 51.5074] }
+    ];
+
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v12',
+      center: [0, 20],
+      zoom: 1.5
+    });
+
+    locations.forEach(loc => {
+      new mapboxgl.Marker()
+        .setLngLat(loc.coords)
+        .setPopup(new mapboxgl.Popup().setText(loc.name))
+        .addTo(map);
+    });
+  </script>
+</body>
+</html>
