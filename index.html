@@ -1,41 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>CRF Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
   <style>
-    body { margin: 0; }
-    #map { width: 100vw; height: 100vh; }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    #sidebar {
+      width: 320px;
+      overflow-y: auto;
+      background: #f8f9fa;
+      border-right: 1px solid #ccc;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    #map {
+      flex: 1;
+    }
+
+    .business {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .business h3 {
+      margin: 0 0 5px;
+      font-size: 1.1rem;
+    }
+
+    .business p {
+      margin: 2px 0;
+      font-size: 0.9rem;
+    }
+
+    .business a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .business a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+
+  <div id="sidebar"></div>
   <div id="map"></div>
+
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiaGFwcHltb25kYXkiLCJhIjoiY21kZXpjNGx2MDhmOTJrb3Bja2ViMW5qcyJ9.rrWtPNbSr1AXBiGQl8AY6A';
 
-    const locations = [
-      { name: "Auckland, NZ", coords: [174.7633, -36.8485] },
-      { name: "Sydney, AUS", coords: [151.2093, -33.8688] },
-      { name: "New York, US", coords: [-74.006, 40.7128] },
-      { name: "London, UK", coords: [-0.1278, 51.5074] }
+    const businesses = [
+      {
+        name: "Corporations Canada",
+        country: "Canada",
+        address: "50 Victoria Street, Room C-114, Gatineau, QC J8X 3X1",
+        phone: "+1 613 954 3576",
+        website: "https://www.ic.gc.ca/eic/site/cd-dgc.nsf/eng/home",
+        email: "christiane.gagnon2@ised-isde.gc.ca",
+        coords: [-75.7129, 45.4240]
+      },
+      {
+        name: "Germany - Bundesanzeiger Verlag GmbH",
+        country: "Germany",
+        address: "Amsterdamer Straße 192, 50735 Cologne, Germany",
+        phone: "+49 211 97668179",
+        website: "https://www.unternehmensregister.de/ureg/?submitaction=language&language=en",
+        email: "service@bundesanzeiger.de",
+        coords: [6.9531, 50.9726]
+      },
+      {
+        name: "Happy Monday",
+        country: "New Zealand",
+        address: "303 Blenheim Road, Christchurch, New Zealand",
+        phone: "0212244441",
+        website: "https://happymonday.co.nz",
+        email: "gary@happymonday.co.nz",
+        coords: [172.5781, -43.5317]
+      },
+      {
+        name: "Lesotho",
+        country: "Lesotho",
+        address: "LNDC Phase II, P.O. Box 747, Maseru 100, Lesotho",
+        phone: "+266 2232 6647",
+        website: "https://www.obfc.org.ls/home/",
+        email: "monahengmaichu@yahoo.com",
+        coords: [27.4784, -29.3124]
+      }
     ];
 
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v12',
       center: [0, 20],
-      zoom: 1.5
+      zoom: 2
     });
 
-    locations.forEach(loc => {
-      new mapboxgl.Marker()
-        .setLngLat(loc.coords)
-        .setPopup(new mapboxgl.Popup().setText(loc.name))
+    const sidebar = document.getElementById('sidebar');
+
+    businesses.forEach(biz => {
+      // Add marker
+      const marker = new mapboxgl.Marker()
+        .setLngLat(biz.coords)
+        .setPopup(
+          new mapboxgl.Popup().setHTML(`
+            <strong>${biz.name}</strong><br>
+            ${biz.address}<br>
+            <a href="mailto:${biz.email}">${biz.email}</a><br>
+            <a href="${biz.website}" target="_blank">${biz.website}</a><br>
+            Phone: ${biz.phone}
+          `)
+        )
         .addTo(map);
+
+      // Add to sidebar
+      const div = document.createElement('div');
+      div.className = 'business';
+      div.innerHTML = `
+        <h3>${biz.name}</h3>
+        <p><strong>${biz.country}</strong></p>
+        <p>${biz.address}</p>
+        <p><a href="mailto:${biz.email}">${biz.email}</a></p>
+        <p>Phone: ${biz.phone}</p>
+        <p><a href="${biz.website}" target="_blank">Website</a></p>
+      `;
+      div.onclick = () => map.flyTo({ center: biz.coords, zoom: 10 });
+      sidebar.appendChild(div);
     });
   </script>
+
 </body>
 </html>
