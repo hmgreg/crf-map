@@ -5,87 +5,13 @@
   <title>CRF Map with Filters</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      display: flex;
-      height: 100vh;
-    }
-
-    #sidebar {
-      width: 340px;
-      overflow-y: auto;
-      background: #f8f9fa;
-      border-right: 1px solid #ccc;
-      padding: 1rem;
-      box-sizing: border-box;
-    }
-
-    #map {
-      flex: 1;
-    }
-
-    .business {
-      margin-bottom: 20px;
-      cursor: pointer;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
-    }
-
-    .business h3 {
-      margin: 0 0 5px;
-      font-size: 1.1rem;
-    }
-
-    .business p {
-      margin: 2px 0;
-      font-size: 0.9rem;
-    }
-
-    .business a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-
-    .business a:hover {
-      text-decoration: underline;
-    }
-
-    .filter-buttons {
-      margin-bottom: 10px;
-    }
-
-    .filter-buttons button {
-      margin: 2px;
-      padding: 5px 10px;
-      border: 1px solid #ccc;
-      background: white;
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-
-    .filter-buttons button.active {
-      background-color: #0077cc;
-      color: white;
-      border-color: #005fa3;
-    }
-
-    #searchInput {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      font-size: 0.9rem;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div id="sidebar">
     <input id="searchInput" placeholder="Search by name, country, email..." />
-    <div class="filter-buttons" id="filterButtons"></div>
+    <!--<div class="filter-buttons" id="filterButtons"></div>-->
     <div id="businessList"></div>
   </div>
   <div id="map"></div>
@@ -100,7 +26,7 @@
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v11',
       center: [20, 5],
-      zoom: 1.3,
+      zoom: 1.2,
       projection: 'mercator' //  Flat map
     });
 
