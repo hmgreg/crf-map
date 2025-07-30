@@ -98,7 +98,7 @@
   <script>
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v12',
+      style: 'mapbox://styles/mapbox/light-v11',
       center: [0, 20],
       zoom: 2,
       projection: 'mercator' //  Flat map
@@ -160,8 +160,17 @@
           map.flyTo({ center: biz.coords, zoom: 10 });
         };
         sidebar.appendChild(div);
-
-        const marker = new mapboxgl.Marker()
+        
+        const el = document.createElement('div');
+        el.style.width = '10px';
+        el.style.height = '10px';
+        el.style.backgroundColor = '#812383';
+        el.style.borderRadius = '50%';
+        el.style.border = '2px solid white';
+        el.style.boxShadow = '0 0 0px rgba(0,0,0,0.0)';
+        el.style.cursor = 'pointer';
+        
+        const marker = new mapboxgl.Marker({ element: el })
           .setLngLat(biz.coords)
           .setPopup(new mapboxgl.Popup().setHTML(`
             <strong>${biz.name}</strong><br>
