@@ -13,6 +13,11 @@
     <input id="searchInput" placeholder="Search by name, country, email..." />
     <!--<div class="filter-buttons" id="filterButtons"></div>-->
     <div id="businessList"></div>
+    <div id="legend">
+      <div><span style="display:inline-block;width:10px;height:10px;background:#d19c32;border-radius:50%;margin-right:5px;"></span>Full Membership</div>
+      <div><span style="display:inline-block;width:10px;height:10px;background:#173751;border-radius:50%;margin-right:5px;"></span>Observer Membership</div>
+      <div><span style="display:inline-block;width:10px;height:10px;background:#404040;border-radius:50%;margin-right:5px;"></span>Associate Membership</div>
+    </div>
   </div>
   <div id="map"></div>
 
@@ -101,6 +106,12 @@
       });
 
       filtered.forEach(biz => {
+        // Choose color based on membershipType
+        let color = "#812383"; // default
+        if (biz.membershipType === "Full") color = "#d19c32";
+        else if (biz.membershipType === "Observer") color = "#173751";
+        else if (biz.membershipType === "Associate") color = "#404040";
+        
         const div = document.createElement('div');
         div.className = 'business';
         div.innerHTML = `
@@ -120,7 +131,7 @@
         const el = document.createElement('div');
         el.style.width = '10px';
         el.style.height = '10px';
-        el.style.backgroundColor = '#812383';
+        el.style.backgroundColor = color;
         el.style.borderRadius = '50%';
         el.style.border = '2px solid white';
         el.style.boxShadow = '0 0 0px rgba(0,0,0,0.0)';

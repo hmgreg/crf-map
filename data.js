@@ -20,7 +20,8 @@ const businesses = [
     phone: "+1 613 954 3576",
     website: "https://www.ic.gc.ca/eic/site/cd-dgc.nsf/eng/home",
     email: "christiane.gagnon2@ised-isde.gc.ca",
-    coords: [-75.7129, 45.4240]
+    coords: [-75.7129, 45.4240],
+    membershipType: "Full"
   },
   {
     name: "Germany - Bundesanzeiger Verlag GmbH",
@@ -29,7 +30,8 @@ const businesses = [
     phone: "+49 211 97668179",
     website: "https://www.unternehmensregister.de/ureg/?submitaction=language&language=en",
     email: "service@bundesanzeiger.de",
-    coords: [6.9531, 50.9726]
+    coords: [6.9531, 50.9726],
+    membershipType: "Full"
   },
   {
     name: "Happy Monday",
@@ -39,7 +41,8 @@ const businesses = [
     website: "https://happymonday.co.nz",
     email: "gary@happymonday.co.nz",
     coords: [172.5781, -43.5317],
-    memberUrl: "https://crf-demo2025.bettermode.io/member/2yxqdQeKpe"
+    memberUrl: "https://crf-demo2025.bettermode.io/member/2yxqdQeKpe",
+    membershipType: "Observer"
   },
   {
     name: "Lesotho",
@@ -48,7 +51,8 @@ const businesses = [
     phone: "+266 2232 6647",
     website: "https://www.obfc.org.ls/home/",
     email: "monahengmaichu@yahoo.com",
-    coords: [27.4784, -29.3124]
+    coords: [27.4784, -29.3124],
+    membershipType: "Associate"
   }
 ];
 
