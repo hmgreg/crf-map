@@ -143,7 +143,7 @@ const businesses = [
     email: "Inquire@fsc.gov.ck",
     coords: [-159.7708, -21.2075],
     membershipType: "Full",
-    logo: "cooks-islands.png"
+    logo: "Cook-Islands.png"
   },
   {
     name: "Bundesanzeiger Verlag GmbH",
@@ -528,7 +528,7 @@ const businesses = [
     email: "registrar@mted.gov.to",
     coords: [-175.2043, -21.1393],
     membershipType: "Full",
-    logo: "Tongan.ppg"
+    logo: "Tongan.png"
   },
   {
     name: "National Center for Business Register",
