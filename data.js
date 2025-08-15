@@ -113,6 +113,17 @@ const businesses = [
     logo: "Bulgaria.png"
   },
   {
+    name: "Business Registration Department – Ministry of Commerce",
+    country: "Cambodia",
+    address: "Lot 19-61 Russian Federation Blvd, Phum Teuk Thia, Sangkat Teuk Thia, Khan Sen Sok, Phnom Penh, Cambodia",
+    phone: "+855 2386 6050",
+    website: "http://www.businessregistration.moc.gov.kh",
+    email: "omdararith@yahoo.com",
+    coords: [104.8784, 11.556],
+    membershipType: "Full",
+    logo: "Cambodia.png"
+  },
+  {
     name: "Corporations Canada",
     country: "Canada",
     address: "50 Victoria Street, Room C-114, Gatineau, QC J8X 3X1",
@@ -120,18 +131,41 @@ const businesses = [
     website: "https://www.ic.gc.ca/eic/site/cd-dgc.nsf/eng/home",
     email: "christiane.gagnon2@ised-isde.gc.ca",
     coords: [-75.7129, 45.4240],
-    membershipType: "Full"
+    membershipType: "Full",
+    logo: "Canada.png"
   },
   {
-    name: "Germany - Bundesanzeiger Verlag GmbH",
+    name: "Financial Supervisory Commission",
+    country: "Cook Islands",
+    address: "Financial Supervisory Commission, P.O. Box 594, Avarua, Rarotonga, Cook Islands",
+    phone: "+682 20 798, +682 21 798",
+    website: "https://www.fsc.gov.ck/cookIslandsFscApp/content/home",
+    email: "Inquire@fsc.gov.ck",
+    coords: [-159.7708, -21.2075],
+    membershipType: "Full",
+    logo: "cooks-islands.png"
+  },
+  {
+    name: "Bundesanzeiger Verlag GmbH",
     country: "Germany",
-    address: "Amsterdamer Straße 192, 50735 Cologne, Germany",
-    phone: "+49 211 97668179",
+    address: "Barbarastraße 1, 50735 Köln, Germany",
+    phone: "+49 211 9766 8179",
     website: "https://www.unternehmensregister.de/ureg/?submitaction=language&language=en",
     email: "service@bundesanzeiger.de",
-    coords: [6.9531, 50.9726],
+    coords: [6.97048282963874, 50.97011431933766],
     membershipType: "Full",
-    logo: "Germany.png"
+    logo: "Germany-Bundesanzeiger-Verlag-GmbH.png"
+  },
+  {
+    name: "Ministry of Justice of North Rhine-Westphalia",
+    country: "Germany",
+    address: "Martin-Luther-Platz 40, Düsseldorf, Germany",
+    phone: "+49 2118 7920",
+    website: "https://www.justiz.nrw.de/WebPortal_en_Relaunch/index.php",
+    email: "Celia.JohnstonVPS@ag-essen.nrw.de",
+    coords: [6.781569, 51.223832],
+    membershipType: "Full",
+    logo: "Germany-North Rhine-Westphalia.png"
   },
   {
     name: "Happy Monday",
