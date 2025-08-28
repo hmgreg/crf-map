@@ -25,15 +25,13 @@
 
   <script>
     const allowedDomain = "https://crf-demo2025.bettermode.io";
-    if (window.top.location.origin === allowedDomain) {
-      //Load your data (memberProfiles, businesses)
-      const script = document.createElement("script");
-      script.src = "data.js";
-      document.body.appendChild(script);
-    } else {
+    if (window.top.location.origin ==! allowedDomain) {
       document.body.innerHTML = "<h1>Access Denied</h1>";
     }
   </script>
+  
+  <!-- Load your data (memberProfiles, businesses) -->
+  <script src="data.js"></script>
   
   <!-- Main logic -->
   <script>
