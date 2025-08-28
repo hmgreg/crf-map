@@ -23,25 +23,28 @@
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
-  <script>
-    const allowedDomain = "https://crf-demo2025.bettermode.io";
-    if (window.top.location.origin ==! allowedDomain) {
-      document.body.innerHTML = "<h1>Access Denied</h1>";
-    }
-  </script>
-  
   <!-- Load your data (memberProfiles, businesses) -->
   <script src="data.js"></script>
   
   <!-- Main logic -->
   <script>
-    const map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/light-v11',
-      center: [25, 8],
-      zoom: 1.2,
-      projection: 'mercator' //  Flat map
-    });
+    const allowedDomain = "https://crf-demo2025.bettermode.io";
+    try {
+      if (window.top.location.origin === allowedDomain) {
+          const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/light-v11',
+          center: [25, 8],
+          zoom: 1.2,
+          projection: 'mercator' //  Flat map
+        });
+      } else {
+        end();
+      }
+    } catch (e) {
+      console.warn("Cross-origin frame detected. Map not initialized.");
+      end();
+    }
 
     map.on('load', () => {
       // Hide country labels
