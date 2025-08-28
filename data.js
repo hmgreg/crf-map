@@ -528,7 +528,7 @@ const businesses = [
     email: "registrar@mted.gov.to",
     coords: [-175.2043, -21.1393],
     membershipType: "Full",
-    logo: "Tongan.png"
+    logo: "Tonga.png"
   },
   {
     name: "National Center for Business Register",
