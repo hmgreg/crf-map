@@ -165,11 +165,15 @@
     renderBusinesses();
 
     const allowedDomain = "https://crf-demo2025.bettermode.io";
-    if (window.top.location.origin ==! allowedDomain) {
+    if (window.top.location.origin !== allowedDomain) {
       const mapDiv = document.getElementById("map");
       if (mapDiv) {
         mapDiv.remove();
-      } 
+      }
+      const sidebarDiv = document.getElementById("sidebar");
+      if (sidebarDiv) {
+        sidebarDiv.remove();
+      }
     }
   </script>
 
