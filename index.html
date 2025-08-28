@@ -28,20 +28,13 @@
   
   <!-- Main logic -->
   <script>
-    const allowedDomain = "https://crf-demo2025.bettermode.io";
-    try {
-      if (window.top.location.origin === allowedDomain) {
-          const map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/light-v11',
-          center: [25, 8],
-          zoom: 1.2,
-          projection: 'mercator' //  Flat map
-        });
-      }
-    } catch (e) {
-      console.warn("Cross-origin frame detected. Map not initialized.");
-    }
+      const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v11',
+      center: [25, 8],
+      zoom: 1.2,
+      projection: 'mercator' //  Flat map
+    });
 
     map.on('load', () => {
       // Hide country labels
@@ -170,6 +163,14 @@
 
     //renderFilterButtons();
     renderBusinesses();
+
+    const allowedDomain = "https://crf-demo2025.bettermode.io";
+    if (window.top.location.origin ==! allowedDomain) {
+      const mapDiv = document.getElementById("map");
+      if (mapDiv) {
+        mapDiv.remove();
+      } 
+    }
   </script>
 
 </body>
