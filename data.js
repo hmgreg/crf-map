@@ -165,7 +165,7 @@ const businesses = [
     email: "Celia.JohnstonVPS@ag-essen.nrw.de",
     coords: [6.781569, 51.223832],
     membershipType: "Full",
-    logo: "Germany-North Rhine-Westphalia.png"
+    logo: "Germany-North-Rhine-Westphalia.png"
   },
   {
     name: "Office of the Registrar of Companies",
