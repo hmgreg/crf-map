@@ -234,6 +234,16 @@ const businesses = [
     logo: "Ireland.png"
   },
   {
+    name: "Central Registry",
+    country: "Isle of Man",
+    address: "Registries Building, Deemsters Walk, Bucks Road, Douglas IM1 3AR, Isle of Man",
+    phone: "+44 01624 689349",
+    website: "http://www.Gov.im/centralregistry",
+    coords: [-4.4819, 54.1500],
+    membershipType: "Full",
+    logo: "Isle-of-Man.png"
+  },
+  {
     name: "The Israeli Corporations Authority (ICA), Ministry of Justice",
     country: "Israel",
     address: "Israeli Corporations Authority, P.O. Box 28178, Jerusalem 9128101, Israel",
@@ -322,6 +332,16 @@ const businesses = [
     logo: "Maldives.png"
   },
   {
+    name: "Malta Business Registry",
+    country: "Malta",
+    address: "Malta Business Registry, AM Business Centre, Triq il-Labour, Zejtun",
+    phone: "+356 2258 2300",
+    website: "https://mbr.mt/",
+    coords: [14.5146, 35.8997],
+    membershipType: "Full",
+    logo: "Malta.png"
+    },
+  {
     name: "Corporate and Business Registration Department",
     country: "Mauritius",
     address: "Companies Division (Head Office), One Cathedral Square, Jules Koenig Street, Port-Louis, Mauritius",
@@ -343,7 +363,7 @@ const businesses = [
     membershipType: "Full",
     logo: "Myanmar.png"
   },
-  /*{
+  {
     name: "Business and Intellectual Property Authority (BIPA)",
     country: "Namibia",
     address: "188 Sam Nujoma Drive, PO Box 185, Windhoek, Namibia",
@@ -353,7 +373,7 @@ const businesses = [
     coords: [17.0832, -22.5597],
     membershipType: "Full",
     logo: "Namibia.png"
-  },*/
+  },
   {
     name: "The Netherlands Chamber of Commerce",
     country: "Netherlands",
