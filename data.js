@@ -239,6 +239,7 @@ const businesses = [
     address: "Registries Building, Deemsters Walk, Bucks Road, Douglas IM1 3AR, Isle of Man",
     phone: "+44 01624 689349",
     website: "http://www.Gov.im/centralregistry",
+    email: "Nick.cowell@gov.im",
     coords: [-4.4819, 54.1500],
     membershipType: "Full",
     logo: "Isle-of-Man.png"
@@ -337,6 +338,7 @@ const businesses = [
     address: "Malta Business Registry, AM Business Centre, Triq il-Labour, Zejtun",
     phone: "+356 2258 2300",
     website: "https://mbr.mt/",
+    email: "geraldine-ann-spiteri-lucas@mbr.mt",
     coords: [14.5146, 35.8997],
     membershipType: "Full",
     logo: "Malta.png"
