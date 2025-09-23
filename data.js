@@ -647,17 +647,6 @@ const businesses = [
     coords: [105.8328, 21.0385],
     membershipType: "Full",
     logo: "Vietnam.png"
-  },
-  {
-    name: "Happy Monday",
-    country: "New Zealand",
-    address: "303 Blenheim Road, Christchurch, New Zealand",
-    phone: "0212244441",
-    website: "https://happymonday.co.nz",
-    email: "gary@happymonday.co.nz",
-    coords: [172.5781, -43.5317],
-    memberUrl: "https://crf-demo2025.bettermode.io/member/2yxqdQeKpe",
-    membershipType: "Observer"
   }
 ];
 
