@@ -144,9 +144,9 @@
             <img src="./logo/${biz.logo}"><br>
             <strong>${biz.name}</strong><br>
             ${biz.address}<br>
-            <a href="mailto:${biz.email}">${biz.email}</a><br>
-             ${biz.memberUrl ? `<a href="${biz.memberUrl}" target="_blank">View Member Profile</a><br>` : ""}
-            <a href="${biz.website}" target="_blank">${biz.website}</a><br>
+            <a class="popup-link" href="mailto:${biz.email}">${biz.email}</a><br>
+             ${biz.memberUrl ? `<a class="popup-link" href="${biz.memberUrl}" target="_blank">View Member Profile</a><br>` : ""}
+            <a class="popup-link" href="${biz.website}" target="_blank">${biz.website}</a><br>
             Phone: ${biz.phone}
           `))
           .addTo(map);
