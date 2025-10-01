@@ -481,7 +481,7 @@ const businesses = [
     address: "55 Newton Road, #03-02 Revenue House, Singapore 307987",
     phone: "+65 6248 6028",
     website: "https://www.acra.gov.sg/home/",
-    email: "shelley_chua@acra.gov.sg",
+    email: "Chloe_ONG@acra.gov.sg",
     coords: [103.8447, 1.3143],
     membershipType: "Full",
     logo: "Singapore.png"
