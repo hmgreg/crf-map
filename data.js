@@ -8,8 +8,7 @@ const memberProfiles = {
   "gary@happymonday.co.nz": "https://crf-demo2025.bettermode.io/member/2yxqdQeKpe",
   "javier.yebenes@fostermoore.com": "https://crf-demo2025.bettermode.io/member/M2BRHV6jt2",
   "justin.hygate@fostermoore.com": "https://crf-demo2025.bettermode.io/member/nqWcIXwmuH",
-  "ongchloeee@gmail.com": "https://crf-demo2025.bettermode.io/member/zo3SlrcVxA",
-  "richardjohncliffordwilson@gmail.com": "https://crf-demo2025.bettermode.io/member/E8dTThnWLX"
+  "ongchloeee@gmail.com": "https://crf-demo2025.bettermode.io/member/zo3SlrcVxA"
 };
 
 const businesses = [
@@ -204,9 +203,9 @@ const businesses = [
     name: "Companies Registry",
     country: "Hong Kong, China",
     address: "Companies Registry, 14/F Queensway Government Offices, 66 Queensway, Hong Kong",
-    phone: "+852 2867 2818",
+    phone: "+852 2867 3530",
     website: "https://www.cr.gov.hk/en/home/index.htm",
-    email: "helentang@cr.gov.hk",
+    email: "kinniewong@cr.gov.hk",
     coords: [114.171, 22.2783],
     membershipType: "Full",
     logo: "Hong-Kong.png"
