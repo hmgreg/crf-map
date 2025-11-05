@@ -607,9 +607,9 @@ const businesses = [
     name: "Companies House",
     country: "United Kingdom",
     address: "Crown Way, Cardiff, CF14 3UZ, Wales, UK",
-    phone: "+44 303 1234 500",
+    phone: "+44 754 2614 908",
     website: "http://www.companieshouse.gov.uk/",
-    email: "enquiries@companies-house.gov.uk",
+    email: "International@companieshouse.gov.uk",
     coords: [-3.1771, 51.4862],
     membershipType: "Full",
     logo: "United-Kingdom.png"
