@@ -29,7 +29,7 @@ const businesses = [
     address: "Level 24, 120 Collins Street, Melbourne, Victoria 3000, Australia",
     phone: "+61 3 9280 3200",
     website: "https://register.business.gov.au/",
-    email: "Karen.Foat@ato.gov.au",
+    email: "Robin.Hayes@asic.gov.au",
     coords: [144.9632, -37.8142],
     membershipType: "Full",
     logo: "Australia.png"
@@ -145,6 +145,39 @@ const businesses = [
     logo: "Cook-Islands.png"
   },
   {
+    name: "Danish Business Authority",
+    country: "Denmark",
+    address: "Langelinie Allé 17, 2100 Copenhagen",
+    phone: "004520708030",
+    website: "https://danishbusinessauthority.dk",
+    email: "sorwhi@erst.dk",
+    coords: [-55.6974874, 12.597027],
+    membershipType: "Full",
+    logo: "Denmark.png"
+  },
+  {
+    name: "CONSEIL NATIONAL DES GREFFIERS DES TRIBUNAUX DE COMMERCE",
+    country: "France",
+    address: "29 rue danielle Casanova",
+    phone: "+33142974744",
+    website: "Www.Cngtc.fr",
+    email: "K.aman@cngtc.fr",
+    coords: [-48.8679582, 2.3284979],
+    membershipType: "Full",
+    logo: "France.png"
+  },
+  {
+    name: "National Agency of Public Registry under the Ministry of Justice of Georgia",
+    country: "Georgia",
+    address: "22, Vakhtang Gorgasali Street",
+    phone: "+995 595 22 10 99",
+    website: "https://www.napr.gov.ge ",
+    email: "mkhardziani@napr.gov.ge",
+    coords: [41.6776204, 44.8238547],
+    membershipType: "Full",
+    logo: "Georgia.png"
+  },
+  {
     name: "Bundesanzeiger Verlag GmbH",
     country: "Germany",
     address: "Barbarastraße 1, 50735 Köln, Germany",
@@ -220,6 +253,17 @@ const businesses = [
     coords: [77.215, 28.6164],
     membershipType: "Full",
     logo: "India.png"
+  },
+  {
+    name: "Ministry of Law, Directorate General of Legal Administrative Affairs",
+    country: "Indonesia",
+    address: "HR. Rasuna Said Street, Kav. 6-7, Kuningan, South Jakarta, Jakarta, Indonesia",
+    phone: "+6281380666855",
+    website: "https://ahu.go.id/",
+    email: "fahrurozi@ahu.go.id",
+    coords: [-6.2199443, 106.815523],
+    membershipType: "Full",
+    logo: "Indonesia.png"
   },
   {
     name: "Companies Registration Office",
@@ -299,6 +343,17 @@ const businesses = [
     logo: "Lesotho.png"
   },
   {
+    name: "Department of Registrar General",
+    country: "Malawai",
+    address: "4th Floor Fatima Arcade, Haile Selassie Road, P.O. Box 100, Malawi",
+    phone: "+26501824355",
+    website: "www.registrargeneral.gov.mw",
+    email: "reg@registrargeneral.gov.mw",
+    coords: [-15.7873515, 35.0078455],
+    membershipType: "Full",
+    logo: "Malawai.jpg"
+  },
+  {
     name: "Companies Commission of Malaysia (SSM)",
     country: "Malaysia",
     address: "Menara SSM@Sentral No 7, Jalan Stesen Sentral 5, Kuala Lumpur Sentral 50623, Kuala Lumpur, Malaysia",
@@ -341,7 +396,7 @@ const businesses = [
     coords: [14.5146, 35.8997],
     membershipType: "Full",
     logo: "Malta.png"
-    },
+  },
   {
     name: "Corporate and Business Registration Department",
     country: "Mauritius",
@@ -352,6 +407,28 @@ const businesses = [
     coords: [57.5012, -20.1609],
     membershipType: "Full",
     logo: "Mauritius.png"
+  },
+  {
+    name: "General Authority for State Registration",
+    country: "Mongolia",
+    address: "WWJH+3R4 Хүүхдийн хоёр, SBD - 11 khoroo, Ulaanbaatar 14171, Mongolia",
+    phone: "976-99084753",
+    website: "burtgel.gov.mn/",
+    email: "ayush@burtgel.gov.mn",
+    coords: [47.9240345, 106.9123765],
+    membershipType: "Full",
+    logo: "Mongolia.jpg"
+  },
+  {
+    name: "Office Marocain de la Propriété Industrielle et Commerciale (OMPIC)",
+    country: "Morocco",
+    address: "RS 114 Km 9,5 Route de Nouasseur Sidi Maârouf Casablanca, Casablanca, Morocco",
+    phone: "+212 5 22 58 64 00/10",
+    website: "www.ompic.ma",
+    email: "kchiri@ompic.ma",
+    coords: [33.5258293, -7.6395996],
+    membershipType: "Full",
+    logo: "Morocco.jpg"
   },
   {
     name: "Ministry of National Planning and Economic Development – Directorate of Investment and Company Administration",
@@ -420,6 +497,17 @@ const businesses = [
     logo: "Papua-New-Guinea.png"
   },
   {
+    name: "Company Registrar",
+    country: "Palestine",
+    address: "RAMALLAH PALESTINE",
+    phone: "0097022977010",
+    website: "www.mne.gov.ps",
+    email: "tareqm@mne.gov.ps",
+    coords: [31.9073856, 35.1852825],
+    membershipType: "Full",
+    logo: "Palestine.jpg"
+  },
+  {
     name: "Securities and Exchange Commission",
     country: "Philippines",
     address: "Secretariat Building, PICC Complex, Roxas Boulevard, Metro Manila, Philippines",
@@ -480,10 +568,21 @@ const businesses = [
     address: "55 Newton Road, #03-02 Revenue House, Singapore 307987",
     phone: "+65 6248 6028",
     website: "https://www.acra.gov.sg/home/",
-    email: "Chloe_ONG@acra.gov.sg",
+    email: "Chia-tern_huey_min@acra.gov.sg",
     coords: [103.8447, 1.3143],
     membershipType: "Full",
     logo: "Singapore.png"
+  },
+  {
+    name: "Chamber of Commerce and Industry",
+    country: "Sint Maarten",
+    address: "11 C.A. Cannegieter St, Philipsburg, Sint Maarten",
+    phone: "+17215423595",
+    website: "www.chamberofcommerce.sx",
+    email: "bizcenter@chamberofcommerce.sx",
+    coords: [18.0240004, -63.0434804],
+    membershipType: "Full",
+    logo: "St-Maarten.jpg"
   },
   {
     name: "Agency of the Republic of Slovenia for Public Legal Records and Related Services, AJPES",
@@ -495,6 +594,17 @@ const businesses = [
     coords: [14.5085, 46.0511],
     membershipType: "Full",
     logo: "Slovenia.png"
+  },
+  {
+    name: "Ministry of Commerce and Industry",
+    country: "Somalia",
+    address: "MOHAMUD HARBI ROAD, WARDHIGLEY DISTRICT, MOGADISHU, SOMALIA",
+    phone: "+252610904064",
+    website: "WWW.MOCI.GOV.SO",
+    email: "dg@moci.gov.so",
+    coords: [3.1140927, 43.6494324],
+    membershipType: "Full",
+    logo: "Somalia.jpg"
   },
   {
     name: "Companies and Intellectual Property Commission (CIPC)",
@@ -646,6 +756,28 @@ const businesses = [
     coords: [105.8328, 21.0385],
     membershipType: "Full",
     logo: "Vietnam.png"
+  },
+  {
+    name: "PATENTS AND COMPANIES REGISTRATION AGENCY",
+    country: "Zambia",
+    address: "H8M8+FGF, Haile Selassie Ave, Lusaka, Zambia",
+    phone: "+260211255127",
+    website: "www.pacra.org.zm",
+    email: "B.Mpalo@pacra.org.zm",
+    coords: [-15.4145863, 28.2885959],
+    membershipType: "Full",
+    logo: "Zambia.jpg"
+  },
+  {
+    name: "Companies and Intellectual Property office of Zimbabwe",
+    country: "Zimbabwe",
+    address: "38 Nelson Mandela Avenue, Harare, Zimbabwe",
+    phone: "+263773560284",
+    website: "https://cipz.pfms.gov.zw",
+    email: "wmushayi@gmail.com",
+    coords: [-17.8292091, 31.045177],
+    membershipType: "Full",
+    logo: "Zimbabwe.png"
   }
 ];
 
