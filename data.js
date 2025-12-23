@@ -151,7 +151,7 @@ const businesses = [
     phone: "004520708030",
     website: "https://danishbusinessauthority.dk",
     email: "sorwhi@erst.dk",
-    coords: [-55.6974874, 12.597027],
+    coords: [12.597027, 55.6974874],
     membershipType: "Full",
     logo: "Denmark.png"
   },
@@ -162,7 +162,7 @@ const businesses = [
     phone: "+33142974744",
     website: "Www.Cngtc.fr",
     email: "K.aman@cngtc.fr",
-    coords: [-48.8679582, 2.3284979],
+    coords: [48.8679582, 2.3284979],
     membershipType: "Full",
     logo: "France.png"
   },
