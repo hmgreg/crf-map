@@ -162,7 +162,7 @@ const businesses = [
     phone: "+33142974744",
     website: "Www.Cngtc.fr",
     email: "K.aman@cngtc.fr",
-    coords: [48.8679582, 2.3284979],
+    coords: [2.3284979, 48.8679582],
     membershipType: "Full",
     logo: "France.png"
   },
@@ -349,7 +349,7 @@ const businesses = [
     phone: "+26501824355",
     website: "www.registrargeneral.gov.mw",
     email: "reg@registrargeneral.gov.mw",
-    coords: [-15.7873515, 35.0078455],
+    coords: [35.0078455, -15.7873515],
     membershipType: "Full",
     logo: "Malawai.jpg"
   },
@@ -415,7 +415,7 @@ const businesses = [
     phone: "976-99084753",
     website: "burtgel.gov.mn/",
     email: "ayush@burtgel.gov.mn",
-    coords: [47.9240345, 106.9123765],
+    coords: [106.9123765, 47.9240345],
     membershipType: "Full",
     logo: "Mongolia.jpg"
   },
@@ -503,7 +503,7 @@ const businesses = [
     phone: "0097022977010",
     website: "www.mne.gov.ps",
     email: "tareqm@mne.gov.ps",
-    coords: [31.9073856, 35.1852825],
+    coords: [35.1852825, 31.9073856],
     membershipType: "Full",
     logo: "Palestine.jpg"
   },
@@ -580,7 +580,7 @@ const businesses = [
     phone: "+17215423595",
     website: "www.chamberofcommerce.sx",
     email: "bizcenter@chamberofcommerce.sx",
-    coords: [18.0240004, -63.0434804],
+    coords: [-63.0434804, 18.0240004],
     membershipType: "Full",
     logo: "St-Maarten.jpg"
   },
@@ -602,7 +602,7 @@ const businesses = [
     phone: "+252610904064",
     website: "WWW.MOCI.GOV.SO",
     email: "dg@moci.gov.so",
-    coords: [3.1140927, 43.6494324],
+    coords: [43.6494324, 3.1140927],
     membershipType: "Full",
     logo: "Somalia.jpg"
   },
@@ -764,7 +764,7 @@ const businesses = [
     phone: "+260211255127",
     website: "www.pacra.org.zm",
     email: "B.Mpalo@pacra.org.zm",
-    coords: [-15.4145863, 28.2885959],
+    coords: [28.2885959, -15.4145863],
     membershipType: "Full",
     logo: "Zambia.jpg"
   },
@@ -775,7 +775,7 @@ const businesses = [
     phone: "+263773560284",
     website: "https://cipz.pfms.gov.zw",
     email: "wmushayi@gmail.com",
-    coords: [-17.8292091, 31.045177],
+    coords: [31.045177, -17.8292091],
     membershipType: "Full",
     logo: "Zimbabwe.png"
   }
