@@ -261,9 +261,9 @@ const businesses = [
     phone: "+6281380666855",
     website: "https://ahu.go.id/",
     email: "fahrurozi@ahu.go.id",
-    coords: [-6.2199443, 106.815523],
+    coords: [106.815523, -6.2199443],
     membershipType: "Full",
-    logo: "Indonesia.png"
+    logo: "White.png"
   },
   {
     name: "Companies Registration Office",
