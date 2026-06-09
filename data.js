@@ -1,7 +1,7 @@
 // data.js
 
-// Mapbox token (loaded from environment)
-mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN || '';
+// Mapbox token
+mapboxgl.accessToken = 'pk.eyJ1IjoiaGFwcHltb25kYXkiLCJhIjoiY21kZXpjNGx2MDhmOTJrb3Bja2ViMW5qcyJ9.rrWtPNbSr1AXBiGQl8AY6A';
 
 // Email to Bettermode profile mapping
 const memberProfiles = {
