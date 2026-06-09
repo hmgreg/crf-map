@@ -1,7 +1,7 @@
 // data.js
 
-// Mapbox token
- mapboxgl.accessToken = 'pk.eyJ1IjoiaGFwcHltb25kYXkiLCJhIjoiY21kZXpjNGx2MDhmOTJrb3Bja2ViMW5qcyJ9.rrWtPNbSr1AXBiGQl8AY6A';
+// Mapbox token (loaded from environment)
+mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN || '';
 
 // Email to Bettermode profile mapping
 const memberProfiles = {
@@ -24,13 +24,13 @@ const businesses = [
     logo: "Anguilla.png"
   },
   {
-    name: "Australian Registry Business Services",
+    name: "Australian Securities & Investments Commission",
     country: "Australia",
-    address: "Level 24, 120 Collins Street, Melbourne, Victoria 3000, Australia",
-    phone: "+61 3 9280 3200",
-    website: "https://register.business.gov.au/",
+    address: "Level 7, 120 Collins Street, Melbourne, Victoria, Australia",
+    phone: "+61 1300 935 075",
+    website: "https://www.asic.gov.au/",
     email: "Robin.Hayes@asic.gov.au",
-    coords: [144.9632, -37.8142],
+    coords: [144.9695939, -37.8144378],
     membershipType: "Full",
     logo: "Australia.png"
   },
