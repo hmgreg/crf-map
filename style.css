@@ -84,6 +84,7 @@
     .mapboxgl-popup-content .image-container img {
       max-width: 220px;
       height: auto;
+      max-height: 100px;
     }
     
     .popup-link:focus {
