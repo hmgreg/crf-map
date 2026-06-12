@@ -141,7 +141,9 @@
         const marker = new mapboxgl.Marker({ element: el })
           .setLngLat(biz.coords)
           .setPopup(new mapboxgl.Popup().setHTML(`
-            <img src="./logo/${biz.logo}"><br>
+            <div class="image-container">
+              <img src="./logo/${biz.logo}" alt="${biz.name}">
+            </div>
             <strong>${biz.name}</strong><br>
             ${biz.address}<br>
             <a class="popup-link" href="mailto:${biz.email}">${biz.email}</a><br>
