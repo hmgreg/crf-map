@@ -156,6 +156,17 @@ const businesses = [
     logo: "Denmark.png"
   },
   {
+    name: "Centro Nacional de Registros",
+    country: "El Salvador",
+    address: "1st West Street, 43 and 45 North Avenue, #2310, San Salvador, El Salvador",
+    phone: "+50325935448",
+    website: "https://www.cnr.gob.sv/",
+    email: "direccionejecutiva@cnr.gob.sv",
+    coords: [-89.226, 13.701],
+    membershipType: "Full",
+    logo: "El-Salvador.png"
+  },
+  {
     name: "CONSEIL NATIONAL DES GREFFIERS DES TRIBUNAUX DE COMMERCE",
     country: "France",
     address: "29 rue danielle Casanova",
@@ -255,17 +266,6 @@ const businesses = [
     logo: "India.png"
   },
   {
-    name: "Ministry of Law, Directorate General of Legal Administrative Affairs",
-    country: "Indonesia",
-    address: "HR. Rasuna Said Street, Kav. 6-7, Kuningan, South Jakarta, Jakarta, Indonesia",
-    phone: "+6281380666855",
-    website: "https://ahu.go.id/",
-    email: "fahrurozi@ahu.go.id",
-    coords: [106.815523, -6.2199443],
-    membershipType: "Full",
-    logo: "White.png"
-  },
-  {
     name: "Companies Registration Office",
     country: "Ireland",
     address: "Companies Registration Office, Bloom House, Gloucester Place Lower, Dublin 1, Ireland",
@@ -343,8 +343,19 @@ const businesses = [
     logo: "Lesotho.png"
   },
   {
+    name: "Office of Justice",
+    country: "Liechtenstein",
+    address: "", /* I don't have the address. It wasn't provided. Giessenstrasse 3, 9490 Vaduz, Liechtenstein*/
+    phone: "+423 236 6200",
+    website: "https://www.llv.li/de/landesverwaltung/amt-fuer-justiz",
+    email: "albert.kaufmann@llv.li",
+    coords: [9.52054, 47.13743], /* guess */
+    membershipType: "Full",
+    logo: "Liechtenstein.png"
+  },
+  {
     name: "Department of Registrar General",
-    country: "Malawai",
+    country: "Malawai", /* Yes. Their name on the document was Malawai */
     address: "4th Floor Fatima Arcade, Haile Selassie Road, P.O. Box 100, Malawi",
     phone: "+26501824355",
     website: "www.registrargeneral.gov.mw",
@@ -486,6 +497,17 @@ const businesses = [
     logo: "North-Macedonia.png"
   },
   {
+    name: "International Financial Centre of Oman",
+    country: "Oman",
+    address: "Bait Al Reem (5th Floor), Thaqafah Street, Al Khuwair, Muscat, Sultanate of Oman",
+    phone: "+96891956428",
+    website: "https://ifcoman.om",
+    email: "Julian.lamb@mifc.om",
+    coords: [58.432, 23.596],
+    membershipType: "Full",
+    logo: "Oman.png"
+  },
+  {
     name: "Investment Promotion Authority",
     country: "Papua New Guinea",
     address: "PO Box 5053, Boroko National Capital District, PNG",
@@ -502,7 +524,7 @@ const businesses = [
     address: "RAMALLAH PALESTINE",
     phone: "0097022977010",
     website: "www.mne.gov.ps",
-    email: "tareqm@mne.gov.ps",
+    email: "rajakh@mne.gov.ps",
     coords: [35.1852825, 31.9073856],
     membershipType: "Full",
     logo: "Palestine.jpg"
@@ -517,17 +539,6 @@ const businesses = [
     coords: [120.9842, 14.5995],
     membershipType: "Full",
     logo: "Philippines.png"
-  },
-  {
-    name: "Qatar Financial Centre Companies Registration Office",
-    country: "Qatar Financial Centre",
-    address: "QFC Tower 1, PO Box 23245, Doha, Qatar",
-    phone: "+974 4496 7776",
-    website: "http://www.qfc.qa/en/Operate/CRO/Pages/PublicRegister.aspx",
-    email: "cro@qfc.com.qa",
-    coords: [51.531, 25.2854],
-    membershipType: "Full",
-    logo: "Qatar.png"
   },
   {
     name: "The National Trade Register Office, The Ministry of Justice",
@@ -574,17 +585,6 @@ const businesses = [
     logo: "Singapore.png"
   },
   {
-    name: "Chamber of Commerce and Industry",
-    country: "Sint Maarten",
-    address: "11 C.A. Cannegieter St, Philipsburg, Sint Maarten",
-    phone: "+17215423595",
-    website: "www.chamberofcommerce.sx",
-    email: "bizcenter@chamberofcommerce.sx",
-    coords: [-63.0434804, 18.0240004],
-    membershipType: "Full",
-    logo: "St-Maarten.jpg"
-  },
-  {
     name: "Agency of the Republic of Slovenia for Public Legal Records and Related Services, AJPES",
     country: "Slovenia (Republic of)",
     address: "Tržaška cesta 16, 1000 Ljubljana, Slovenia",
@@ -594,17 +594,6 @@ const businesses = [
     coords: [14.5085, 46.0511],
     membershipType: "Full",
     logo: "Slovenia.png"
-  },
-  {
-    name: "Ministry of Commerce and Industry",
-    country: "Somalia",
-    address: "MOHAMUD HARBI ROAD, WARDHIGLEY DISTRICT, MOGADISHU, SOMALIA",
-    phone: "+252610904064",
-    website: "WWW.MOCI.GOV.SO",
-    email: "dg@moci.gov.so",
-    coords: [43.6494324, 3.1140927],
-    membershipType: "Full",
-    logo: "Somalia.jpg"
   },
   {
     name: "Companies and Intellectual Property Commission (CIPC)",
@@ -638,6 +627,17 @@ const businesses = [
     coords: [79.8609, 6.9176],
     membershipType: "Full",
     logo: "Sri-Lanka.png"
+  },
+  {
+    name: "Financial Services Regulatory Authority",
+    country: "St Helena, Ascension and Tristan da Cunha",
+    address: "The Castle, Jamestown, St Helena Island, South Atlantic Ocean",
+    phone: "+44(0)7983247666",
+    website: "http://www.drc.gov.lk",
+    email: "chrismead@fsra.sh",
+    coords: [-5.7181, -15.9244],
+    membershipType: "Full",
+    logo: "St-Helena.png"
   },
   {
     name: "Department of Business Development, Ministry of Commerce",
@@ -725,6 +725,17 @@ const businesses = [
     logo: "United-Kingdom.png"
   },
   {
+    name: "Corporations Division - Office of the Secretary of the Commonwealth of Massachusetts",
+    country: "United States of America -  Massachusetts",
+    address: "One Ashburton Place, Room 1711, Boston MA 02108",
+    phone: "1-617-727-9640",
+    website: "https://www.sec.state.ma.us/divisions/corporations/corporations.htm",
+    email: "marissa.soto-ortiz@sec.state.ma.us",
+    coords: [-71.062333, 42.359527],
+    membershipType: "Full",
+    logo: "USA-Massachusetts.png"
+  },
+  {
     name: "Department of Licensing & Consumer Protection",
     country: "United States of America, (Washington)",
     address: "1100 4th Street, S.W., Washington, DC 20024, USA",
@@ -745,17 +756,6 @@ const businesses = [
     coords: [168.3168, -17.7389],
     membershipType: "Full",
     logo: "Vanuatu.png"
-  },
-  {
-    name: "Agency for Business Registration – Ministry of Planning and Investment",
-    country: "Vietnam",
-    address: "6B Hoang Dieu, Ba Dinh District, Hanoi, Vietnam",
-    phone: "+84 08044503",
-    website: "https://dangkykinhdoanh.gov.vn/Default.aspx?tabid=101&language=en-GB",
-    email: "hotro@brr.vn",
-    coords: [105.8328, 21.0385],
-    membershipType: "Full",
-    logo: "Vietnam.png"
   },
   {
     name: "PATENTS AND COMPANIES REGISTRATION AGENCY",
