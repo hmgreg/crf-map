@@ -507,6 +507,17 @@ const businesses = [
     membershipType: "Full",
     logo: "Oman.png"
   },
+  /*{ // Pakistan is a member but was also on the previous list so not sure it's to be added per se. 
+    name: "Securities and Exchange Commission of Pakistan",
+    country: "Pakistan",
+    address: "National Insurance Corporation Building, 63 Jinnah Avenue, Islamabad - 44000, Pakistan",
+    phone: "0097022977010",
+    website: "https://www.mne.gov.ps",
+    email: "rajakh@mne.gov.ps",
+    coords: [73.0655104, 33.7158703],
+    membershipType: "Full",
+    logo: "Pakistan.png" // get 
+  },*/
   {
     name: "Investment Promotion Authority",
     country: "Papua New Guinea",
@@ -539,6 +550,17 @@ const businesses = [
     coords: [120.9842, 14.5995],
     membershipType: "Full",
     logo: "Philippines.png"
+  },
+  {
+    name: "The Companies Registration Office",
+    country: "Qatar",
+    address: "Hermas Business Park, Tower C, Lusail, Doha, Qatar",
+    phone: "+974 4496 7776",
+    website: "http://www.qfc.com.qa/cro",
+    email: "a.purayil@ch.gov.qa",
+    coords: [25.2854, 51.531],
+    membershipType: "Full",
+    logo: "Qatar.png" /* get image */
   },
   {
     name: "The National Trade Register Office, The Ministry of Justice",
@@ -633,7 +655,7 @@ const businesses = [
     country: "St Helena, Ascension and Tristan da Cunha",
     address: "The Castle, Jamestown, St Helena Island, South Atlantic Ocean",
     phone: "+44(0)7983247666",
-    website: "http://www.drc.gov.lk",
+    website: "https://www.fsra.sh",
     email: "chrismead@fsra.sh",
     coords: [-5.7181, -15.9244],
     membershipType: "Full",
