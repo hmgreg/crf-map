@@ -507,7 +507,7 @@ const businesses = [
     membershipType: "Full",
     logo: "Oman.png"
   },
-  /*{ // Pakistan is a member but was also on the previous list so not sure it's to be added per se. 
+  { // Pakistan is a member but was also on the previous list so not sure it's to be added per se. 
     name: "Securities and Exchange Commission of Pakistan",
     country: "Pakistan",
     address: "National Insurance Corporation Building, 63 Jinnah Avenue, Islamabad - 44000, Pakistan",
@@ -516,8 +516,8 @@ const businesses = [
     email: "rajakh@mne.gov.ps",
     coords: [73.0655104, 33.7158703],
     membershipType: "Full",
-    logo: "Pakistan.png" // get 
-  },*/
+    logo: "Pakistan.png" // Check it is correct 
+  },
   {
     name: "Investment Promotion Authority",
     country: "Papua New Guinea",
